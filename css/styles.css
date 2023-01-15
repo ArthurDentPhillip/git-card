@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(114, 67, 34);
+  background-color: rgb(218, 217, 217);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  position: relative;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-1 {
+  width: 8.33%;
+  flex-grow: 1;
+}
+
+.col-2 {
+  width: 16.66%;
+  flex-grow: 1;
+}
+
+.col-3 {
+  width: 24.99%;
+  flex-grow: 1;
+}
+
+.col-4 {
+  width: 33.32%;
+  flex-grow: 1;
+}
+
+.col-5 {
+  width: 41.65%;
+  flex-grow: 1;
+}
+
+.col-6 {
+  width: 49.98%;
+  flex-grow: 1;
+}
+
+.col-7 {
+  width: 58.31%;
+  flex-grow: 1;
+}
+
+.col-8 {
+  width: 66.64%;
+  flex-grow: 1;
+}
+
+.col-9 {
+  width: 74.97%;
+  flex-grow: 1;
+}
+
+.col-10 {
+  width: 83.3%;
+  flex-grow: 1;
+}
+
+.col-11 {
+  width: 91.63%;
+  flex-grow: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-left: 45%;
+}
+
+.card {
+  margin: 2%;
+  z-index: 0;
+}
+
+.front {
+  height: 100%;
+}
+
+.popup, .in_popup {
+  z-index: 9999;
+}
+
+.popup {
+  position: absolute;
+  background-color: rgba(188, 194, 194, 0.5019607843);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.in_popup {
+  margin-left: 45%;
+  margin-top: 20%;
+}
+
+.back {
+  display: none;
+}
+
+.left {
+  padding-left: 20%;
+  padding-top: 1%;
+}
+
+.right {
+  padding-left: 20%;
+}
+
+.finish {
+  display: none;
+}
+
+.finish, .start {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border: 2px solid grey;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.right {
+  position: relative;
+}
+
+.finish {
+  position: absolute;
+  left: 40%;
+}
+
+.line {
+  width: 90%;
+  height: 2px;
+  margin-left: 5%;
+  margin-top: 1%;
+  background-color: rgba(188, 194, 194, 0.5019607843);
+  padding: 1px;
+}
+
+.description {
+  padding-top: 1%;
+  padding-left: 25%;
+  color: rgb(87, 86, 86);
+}/*# sourceMappingURL=styles.css.map */

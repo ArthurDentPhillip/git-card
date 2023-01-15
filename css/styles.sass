@@ -1,0 +1,111 @@
+$some: col
+$value: 8.33
+$border: 2px solid grey
+$borderRadius10: 10px
+$borderRadius50: 50px
+$colorChocolate: rgb(114, 67, 34)
+$colorWhiteGray: #bcc2c280
+$colorGray: rgb(218, 217, 217)
+$colorGrayBlack: rgb(87, 86, 86)
+*
+    margin:0
+    padding:0
+    box-sizing: border-box
+
+body
+    font-family: serif
+    font-size: 18px
+    font-weight: 600
+    color: $colorChocolate
+    background-color: $colorGray
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+    padding-left: 15px
+    padding-right: 15px
+
+.row
+    position: relative
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-wrap: wrap
+    margin-left: -15px
+    margin-right: -15px
+
+@for $i from 0 to 11
+    @if($i==0)
+        .#{$some}-#{$i+1}
+            width:1% * $value
+            flex-grow: 1
+    @else
+        $value: $value + 8.33
+        .#{$some}-#{$i+1}
+            width:1% * $value
+            flex-grow: 1
+img
+    width:100%
+    height: 100%
+    border: $border
+    border-radius: $borderRadius10
+    margin-left:45%
+
+.card
+    margin:2%
+    z-index:0
+
+.front
+    height: 100%
+
+.popup, .in_popup
+    z-index:9999
+.popup
+    position: absolute
+    background-color:$colorWhiteGray
+    width:100%
+    height:100%
+    display: none
+
+.in_popup
+    margin-left:45%
+    margin-top:20%
+.back
+    display: none
+.left
+    padding-left:20%
+    padding-top:1%
+.right
+    padding-left:20%
+
+.finish
+    display: none
+
+.finish, .start
+    width: 100px
+    height: 30px
+    border: none
+    border: $border
+    background-color: black
+    border-radius: $borderRadius10
+    color: white
+
+.right
+    position: relative
+
+.finish
+    position: absolute
+    left: 40%
+
+.line
+    width:90%
+    height:2px
+    margin-left: 5%
+    margin-top: 1%
+    background-color: $colorWhiteGray
+    padding:1px
+
+.description
+    padding-top:1%
+    padding-left: 25%
+    color: $colorGrayBlack
